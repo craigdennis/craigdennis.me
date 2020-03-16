@@ -1,0 +1,28 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.header-text {
+    position: absolute;
+    color: white;
+    bottom:10%;
+    left: 10%;
+    z-index: 99;
+    font-size: 1.5rem;
+}
