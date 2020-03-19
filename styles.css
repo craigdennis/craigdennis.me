@@ -15,6 +15,7 @@ body {
 
 .container {
   position: relative;
+  margin-bottom: 2em;
 }
 
 .header-image {
@@ -53,6 +54,9 @@ body {
 .portfolio {
     width: 75%;
     margin: 0 auto;
+    background-color: #F5F5F5;
+    padding: 0.5em 2em;
+    box-shadow: 1px 1px 5px 1px rgb(124, 124, 124);;
 }
 
 .portfolio h1 {
@@ -72,6 +76,7 @@ body {
     justify-content: space-between;
     margin-bottom: 5em;
     text-align: justify;
+    
     
 }
 
