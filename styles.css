@@ -161,8 +161,25 @@ button {
     padding: 2em 0;
 }
 
+.contact button {
+    background-color: #1D84B5;
+    color: white;
+}
+
 .contact button:hover {
-    
+    background-color: #176087;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #0A2239;
+    color: white;
 }
 
 
