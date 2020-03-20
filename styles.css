@@ -13,9 +13,14 @@ body {
   padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .container {
   position: relative;
-  margin-bottom: 2em;
+
 }
 
 .header-image {
@@ -52,31 +57,100 @@ body {
 /* PORTFOLIO */
 
 .portfolio {
-    width: 75%;
+
     margin: 0 auto;
-    background-color: #F5F5F5;
-    padding: 0.5em 2em;
-    box-shadow: 1px 1px 5px 1px rgb(124, 124, 124);;
+    
 }
 
 .portfolio h1 {
     text-align: center;
+    margin: 1.5em;
+}
+
+.portfolio h2 {
+    text-align: center;
 }
 
 .portfolio p {
-    width: 40%;
+    width: 50%;
+    margin: 0 auto;
+  
 }
 .portfolio img {
-    width: 50%;
+    width: 75%;
+    text-align: center;
+    margin: 5em auto 0;
+}
+
+.portfolio button {
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    margin: 2em;
+    font-size: 1.5rem;
+}
+
+.portfolio-container {
+    text-align: center;
+    padding-bottom: 3em;
 }
 
 .portfolio-content{
+    width: 75%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 5em;
-    text-align: justify;
-    
-    
+    margin: 0 auto;
 }
+
+#portfolio-1 {
+    background-color: #B8336A;
+    color: white;
+}
+
+#portfolio-2 {
+    background-color: #F3EEC3;
+}
+
+#portfolio-3 {
+    background-color: #293241;
+    color: white;
+}
+
+#portfolio-4 {
+    background-color: #BFFFBC;
+}
+
+#button-1 {
+    background-color: #9f4c6f;
+}
+#button-1:hover {
+    background-color: #865b6d;
+}
+
+#button-2 {
+    background-color: #dad184;
+}
+
+#button-2:hover {
+    background-color: #c1b54e;
+}
+
+#button-3 {
+    background-color: #273a5a;
+}
+
+#button-3:hover {
+    background-color: #495974;
+}
+
+#button-4 {
+    background-color: #81e67c;
+}
+
+#button-4:hover {
+    background-color: #4ccc45;
+}
+
+
 
