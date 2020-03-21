@@ -33,7 +33,7 @@
           //Specify the slider's width (in pixels)
           var sliderwidth = '1400px';
           //Specify the slider's height
-          var sliderheight = '300px';
+          var sliderheight = '400px';
           //Specify the slider's slide speed (larger is faster 1-10)
           var slidespeed = 2;
           //configure background color:
@@ -43,13 +43,13 @@
           var leftrightslide = new Array();
           var finalslide = '';
           leftrightslide[0] =
-            '<a href="https://www.google.com/search?q=adrian+tchaikovsky+children+of+ruin"><img src="images/current/children-of-ruin.jpg"></a>';
+            '<a href="https://www.google.com/search?q=adrian+tchaikovsky+children+of+ruin"><img class="slider" src="images/current/children-of-ruin.jpg"></a>';
           leftrightslide[1] =
-            '<a href="https://www.google.com/search?q=tim+hale+smarter+investing"><img src="images/current/smarter-investing.jpg"></a>';
+            '<a href="https://www.google.com/search?q=tim+hale+smarter+investing"><img class="slider" src="images/current/smarter-investing.jpg"></a>';
           leftrightslide[2] =
-            '<a href="https://www.google.com/search?q=stephen+hawking+brief+answers"><img src="images/current/brief-answers.jpg"></a>';
+            '<a href="https://www.google.com/search?q=stephen+hawking+brief+answers"><img class="slider" src="images/current/brief-answers.jpg"></a>';
           leftrightslide[3] =
-            '<a href="https://www.google.com/search?q=caroline+rose+superstar"><img src="images/current/caroline-rose.jpg"></a>';
+            '<a href="https://www.google.com/search?q=caroline+rose+superstar"><img class="slider" src="images/current/caroline-rose.jpg"></a>';
 
           //Specify gap between each image (use HTML):
           var imagegap = "<span class='gap'></span>";
@@ -144,7 +144,7 @@
                     ';overflow:hidden">'
                 );
                 write(
-                  '<div style="position:absolute;width:' +
+                  '<div style="margin-top:2em;position:absolute;width:' +
                     sliderwidth +
                     ';height:' +
                     sliderheight +

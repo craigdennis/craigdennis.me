@@ -71,14 +71,24 @@ button {
 
 .current {
     margin: 0 auto;
-    padding: 1em;
+    padding: 2em;
     min-height: 5em;
-    width: 100%;
+    max-width: 100%;
+    
    
 }
 
 .gap {
     margin-right: 50px;
+}
+
+.slider {
+    
+    transition: transform .2s;
+}
+
+.slider:hover {
+    transform: scale(1.2);
 }
 
 
