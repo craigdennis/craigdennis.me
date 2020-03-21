@@ -7,6 +7,11 @@ h6 {
   font-family: 'Lora', serif;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
 body {
   font-family: 'Merriweather', serif;
   margin: 0;
@@ -62,17 +67,27 @@ button {
   }
 }
 
+/* CURRENT */
+
+.current {
+    margin: 0 auto;
+    padding: 1em;
+    min-height: 5em;
+    width: 100%;
+   
+}
+
+.gap {
+    margin-right: 50px;
+}
+
+
 /* PORTFOLIO */
 
 .portfolio {
 
     margin: 0 auto;
     
-}
-
-.portfolio h1 {
-    text-align: center;
-    margin: 1.5em;
 }
 
 .portfolio h2 {
