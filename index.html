@@ -56,7 +56,6 @@
           //Specify gap between each image (use HTML):
           var imagegap = "<span class='gap'></span>";
 
-
           ////NO NEED TO EDIT BELOW THIS LINE////////////
 
           var copyspeed = slidespeed;
@@ -70,8 +69,8 @@
             );
           var actualwidth = '';
           var cross_slide, ns_slide;
-          
-          if (iedom || document.layers) {
+
+          if (iedom) {
             with (document) {
               document.write(
                 '<table border="0" cellspacing="0" cellpadding="0"><td>'
@@ -100,24 +99,7 @@
                   '<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>'
                 );
                 write('</div></div>');
-              } else if (document.layers) {
-                write(
-                  '<ilayer width=' +
-                    sliderwidth +
-                    ' height=' +
-                    sliderheight +
-                    ' name="ns_slidemenu" bgColor=' +
-                    slidebgcolor +
-                    '>'
-                );
-                write(
-                  '<layer name="ns_slidemenu2" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>'
-                );
-                write(
-                  '<layer name="ns_slidemenu3" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>'
-                );
-                write('</ilayer>');
-              }
+              } 
               document.write('</td></table>');
             }
           }
