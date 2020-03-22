@@ -23,25 +23,17 @@
     <main>
       <div class="current">
         <h1>In My Life Currently</h1>
+        <div id="current-container"></div>
         <script type="text/javascript">
-          /***********************************************
-           * Conveyor belt slideshow script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-           * Please keep this notice intact
-           * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-           ***********************************************/
-
           //Specify the slider's width (in pixels)
           var sliderwidth = '1400px';
           //Specify the slider's height
           var sliderheight = '400px';
           //Specify the slider's slide speed (larger is faster 1-10)
           var slidespeed = 2;
-          //configure background color:
-          slidebgcolor = '#FFF';
 
           //Specify the slider's images
           var leftrightslide = new Array();
-          var finalslide = '';
           leftrightslide[0] =
             '<a href="https://www.google.com/search?q=adrian+tchaikovsky+children+of+ruin"><img class="slider" src="images/current/children-of-ruin.jpg"></a>';
           leftrightslide[1] =
@@ -53,53 +45,32 @@
           leftrightslide[4] =
             '<a href="https://www.google.com/search?q=animal+crossing+new+horizons"><img class="slider" src="images/current/animal-crossing.jpg"></a>';
 
-          //Specify gap between each image (use HTML):
-          var imagegap = "<span class='gap'></span>";
-
-          ////NO NEED TO EDIT BELOW THIS LINE////////////
-
           var copyspeed = slidespeed;
-          leftrightslide = '<nobr>' + leftrightslide.join(imagegap) + '</nobr>';
-          var iedom = document.getElementById;
-            document.write(
-              '<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">' +
-                leftrightslide +
-                '</span>'
-            );
-          var actualwidth = '';
-          var cross_slide, ns_slide;
+          leftrightslide =
+            '<nobr>' +
+            leftrightslide.join("<span class='gap'></span>") +
+            '</nobr>';
 
-              document.write(
-                '<table border="0" cellspacing="0" cellpadding="0"><td>'
-              );
-            
-              document.write(
-                  '<div style="position:relative;width:' +
-                    sliderwidth +
-                    ';height:' +
-                    sliderheight +
-                    ';overflow:hidden">'
-                );
-                document.write(
-                  '<div style="margin-top:2em;position:absolute;width:' +
-                    sliderwidth +
-                    ';height:' +
-                    sliderheight +
-                    ';background-color:' +
-                    slidebgcolor +
-                    '" onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed">'
-                );
-                document.write(
-                  '<div id="test2" style="position:absolute;left:0px;top:0px"></div>'
-                );
-                document.write(
-                  '<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>'
-                );
-                document.write('</div></div>');
-              
-              document.write('</td></table>');
-            
-          
+          document.write(
+            '<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">' +
+              leftrightslide +
+              '</span>',
+            '<table border="0" cellspacing="0" cellpadding="0"><td>',
+            '<div style="position:relative;width:' +
+              sliderwidth +
+              ';height:' +
+              sliderheight +
+              ';overflow:hidden">',
+            '<div style="margin-top:2em;position:absolute;width:' +
+              sliderwidth +
+              ';height:' +
+              sliderheight +
+              ';background-color:#fff' +
+              '" onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed">',
+            '<div id="test2" style="position:absolute;left:0px;top:0px"></div>',
+            '<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>',
+            '</td></table>'
+          );
         </script>
       </div>
 

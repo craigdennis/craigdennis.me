@@ -1,5 +1,11 @@
+var cross_slide, ns_slide;
+
 //Specify pixels gap between each slideshow rotation (use integer):
 var slideshowgap = 50;
+var actualwidth = '';
+var iedom = document.getElementById;
+
+
 
 function fillup() {
     if (iedom) {
