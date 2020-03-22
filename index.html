@@ -21,6 +21,173 @@
       </div>
     </header>
     <main>
+      <div class="current">
+        <h1>In My Life Currently</h1>
+        <script type="text/javascript">
+          /***********************************************
+           * Conveyor belt slideshow script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+           * Please keep this notice intact
+           * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+           ***********************************************/
+
+          //Specify the slider's width (in pixels)
+          var sliderwidth = '1400px';
+          //Specify the slider's height
+          var sliderheight = '400px';
+          //Specify the slider's slide speed (larger is faster 1-10)
+          var slidespeed = 2;
+          //configure background color:
+          slidebgcolor = '#FFF';
+
+          //Specify the slider's images
+          var leftrightslide = new Array();
+          var finalslide = '';
+          leftrightslide[0] =
+            '<a href="https://www.google.com/search?q=adrian+tchaikovsky+children+of+ruin"><img class="slider" src="images/current/children-of-ruin.jpg"></a>';
+          leftrightslide[1] =
+            '<a href="https://www.google.com/search?q=tim+hale+smarter+investing"><img class="slider" src="images/current/smarter-investing.jpg"></a>';
+          leftrightslide[2] =
+            '<a href="https://www.google.com/search?q=stephen+hawking+brief+answers"><img class="slider" src="images/current/brief-answers.jpg"></a>';
+          leftrightslide[3] =
+            '<a href="https://www.google.com/search?q=caroline+rose+superstar"><img class="slider" src="images/current/caroline-rose.jpg"></a>';
+            leftrightslide[4] =
+            '<a href="https://www.google.com/search?q=animal+crossing+new+horizons"><img class="slider" src="images/current/animal-crossing.jpg"></a>';
+
+
+
+
+          //Specify gap between each image (use HTML):
+          var imagegap = "<span class='gap'></span>";
+
+          //Specify pixels gap between each slideshow rotation (use integer):
+          var slideshowgap = 50;
+
+          ////NO NEED TO EDIT BELOW THIS LINE////////////
+
+          var copyspeed = slidespeed;
+          leftrightslide = '<nobr>' + leftrightslide.join(imagegap) + '</nobr>';
+          var iedom = document.all || document.getElementById;
+          if (iedom)
+            document.write(
+              '<span id="temp" style="visibility:hidden;position:absolute;top:-100px;left:-9000px">' +
+                leftrightslide +
+                '</span>'
+            );
+          var actualwidth = '';
+          var cross_slide, ns_slide;
+
+          function fillup() {
+            if (iedom) {
+              cross_slide = document.getElementById
+                ? document.getElementById('test2')
+                : document.all.test2;
+              cross_slide2 = document.getElementById
+                ? document.getElementById('test3')
+                : document.all.test3;
+              cross_slide.innerHTML = cross_slide2.innerHTML = leftrightslide;
+              actualwidth = document.all
+                ? cross_slide.offsetWidth
+                : document.getElementById('temp').offsetWidth;
+              cross_slide2.style.left = actualwidth + slideshowgap + 'px';
+            } else if (document.layers) {
+              ns_slide = document.ns_slidemenu.document.ns_slidemenu2;
+              ns_slide2 = document.ns_slidemenu.document.ns_slidemenu3;
+              ns_slide.document.write(leftrightslide);
+              ns_slide.document.close();
+              actualwidth = ns_slide.document.width;
+              ns_slide2.left = actualwidth + slideshowgap;
+              ns_slide2.document.write(leftrightslide);
+              ns_slide2.document.close();
+            }
+            lefttime = setInterval('slideleft()', 30);
+          }
+          window.onload = fillup;
+
+          function slideleft() {
+            if (iedom) {
+              if (parseInt(cross_slide.style.left) > actualwidth * -1 + 8)
+                cross_slide.style.left =
+                  parseInt(cross_slide.style.left) - copyspeed + 'px';
+              else
+                cross_slide.style.left =
+                  parseInt(cross_slide2.style.left) +
+                  actualwidth +
+                  slideshowgap +
+                  'px';
+
+              if (parseInt(cross_slide2.style.left) > actualwidth * -1 + 8)
+                cross_slide2.style.left =
+                  parseInt(cross_slide2.style.left) - copyspeed + 'px';
+              else
+                cross_slide2.style.left =
+                  parseInt(cross_slide.style.left) +
+                  actualwidth +
+                  slideshowgap +
+                  'px';
+            } else if (document.layers) {
+              if (ns_slide.left > actualwidth * -1 + 8)
+                ns_slide.left -= copyspeed;
+              else ns_slide.left = ns_slide2.left + actualwidth + slideshowgap;
+
+              if (ns_slide2.left > actualwidth * -1 + 8)
+                ns_slide2.left -= copyspeed;
+              else ns_slide2.left = ns_slide.left + actualwidth + slideshowgap;
+            }
+          }
+
+          if (iedom || document.layers) {
+            with (document) {
+              document.write(
+                '<table border="0" cellspacing="0" cellpadding="0"><td>'
+              );
+              if (iedom) {
+                write(
+                  '<div style="position:relative;width:' +
+                    sliderwidth +
+                    ';height:' +
+                    sliderheight +
+                    ';overflow:hidden">'
+                );
+                write(
+                  '<div style="margin-top:2em;position:absolute;width:' +
+                    sliderwidth +
+                    ';height:' +
+                    sliderheight +
+                    ';background-color:' +
+                    slidebgcolor +
+                    '" onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed">'
+                );
+                write(
+                  '<div id="test2" style="position:absolute;left:0px;top:0px"></div>'
+                );
+                write(
+                  '<div id="test3" style="position:absolute;left:-1000px;top:0px"></div>'
+                );
+                write('</div></div>');
+              } else if (document.layers) {
+                write(
+                  '<ilayer width=' +
+                    sliderwidth +
+                    ' height=' +
+                    sliderheight +
+                    ' name="ns_slidemenu" bgColor=' +
+                    slidebgcolor +
+                    '>'
+                );
+                write(
+                  '<layer name="ns_slidemenu2" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>'
+                );
+                write(
+                  '<layer name="ns_slidemenu3" left=0 top=0 onMouseover="copyspeed=0" onMouseout="copyspeed=slidespeed"></layer>'
+                );
+                write('</ilayer>');
+              }
+              document.write('</td></table>');
+            }
+          }
+        </script>
+      </div>
+
       <div class="portfolio">
         <h1>Portfolio</h1>
 
@@ -34,21 +201,25 @@
               contained everything needed to help Ted to apply for acting jobs.
             </p>
           </div>
-          <a target="_blank"  href="https://www.tedclaxton.co.uk/"><button id="button-1">View Website</button></a>
+          <a target="_blank" href="https://www.tedclaxton.co.uk/"
+            ><button id="button-1">View Website</button></a
+          >
         </div>
 
         <div id="portfolio-2" class="portfolio-container">
-            <img src="images/flourishing-media.png" alt="" />
-            <h2>Flourishing Media</h2>
-            <h3>Wordpress and Custom CSS</h3>
-            <div class="portfolio-content">
-              <p>
-                A dog groomer website showing of the services, a gallery of
-                previous cuts and customer feedback.
-              </p>
-            </div>
-            <a target="_blank"  href="https://flourishingmedia.co.uk/"><button id="button-2">View Website</button></a>
+          <img src="images/flourishing-media.png" alt="" />
+          <h2>Flourishing Media</h2>
+          <h3>Wordpress and Custom CSS</h3>
+          <div class="portfolio-content">
+            <p>
+              A dog groomer website showing of the services, a gallery of
+              previous cuts and customer feedback.
+            </p>
           </div>
+          <a target="_blank" href="https://flourishingmedia.co.uk/"
+            ><button id="button-2">View Website</button></a
+          >
+        </div>
 
         <div id="portfolio-3" class="portfolio-container">
           <img src="images/dog-groomers.png" alt="" />
@@ -60,7 +231,9 @@
               previous cuts and customer feedback.
             </p>
           </div>
-          <a target="_blank"  href="https://flourishingmedia.co.uk/dog-grooming/"><button id="button-3">View Website</button></a>
+          <a target="_blank" href="https://flourishingmedia.co.uk/dog-grooming/"
+            ><button id="button-3">View Website</button></a
+          >
         </div>
 
         <div id="portfolio-4" class="portfolio-container">
@@ -72,18 +245,27 @@
               Simple Band website with social links and contact page.
             </p>
           </div>
-          <a target="_blank"  href="https://flourishingmedia.co.uk/coverd-in-punk/"><button id="button-4">View Website</button></a>
+          <a
+            target="_blank"
+            href="https://flourishingmedia.co.uk/coverd-in-punk/"
+            ><button id="button-4">View Website</button></a
+          >
         </div>
       </div>
 
       <div class="contact">
-          <h1>If you are looking for more...</h1>
-          <p>Drop me a email if you are looking for help on a project or would like a good chin wag.</p>
-          <a href="mailto:craigdennis1990@gmail.com"><button>Message Me</button></a>
+        <h1>If you are looking for more...</h1>
+        <p>
+          Drop me a email if you are looking for help on a project or would like
+          a good chin wag.
+        </p>
+        <a href="mailto:craigdennis1990@gmail.com"
+          ><button>Message Me</button></a
+        >
       </div>
     </main>
     <footer>
-        <p>© Craig Dennis. All Right Reserved</p>
+      <p>© Craig Dennis. All Right Reserved</p>
     </footer>
   </body>
 </html>
