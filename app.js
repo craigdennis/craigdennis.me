@@ -6,17 +6,11 @@ var actualwidth = '';
 
 
 function fillup() {
-      cross_slide = document.getElementById
-        ? document.getElementById('test2')
-        : document.all.test2;
-      cross_slide2 = document.getElementById
-        ? document.getElementById('test3')
-        : document.all.test3;
+      cross_slide = document.getElementById('test2');
+      cross_slide2 = document.getElementById('test3');
       cross_slide.innerHTML = cross_slide2.innerHTML = leftrightslide;
-      actualwidth = document.all
-        ? cross_slide.offsetWidth
-        : document.getElementById('temp').offsetWidth;
-      cross_slide2.style.left = actualwidth + slideshowgap + 'px';
+      actualwidth = document.getElementById('temp').offsetWidth;
+      cross_slide2.style.left = actualwidth + slideshowgap + '50px';
 
     lefttime = setInterval('slideleft()', 30);
   }
