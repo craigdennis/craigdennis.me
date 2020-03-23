@@ -4,7 +4,6 @@ var cross_slide, ns_slide;
 var slideshowgap = 50;
 var actualwidth = '';
 
-
 function fillup() {
       cross_slide = document.getElementById('test2');
       cross_slide2 = document.getElementById('test3');
@@ -14,7 +13,8 @@ function fillup() {
 
     lefttime = setInterval('slideleft()', 30);
   }
-  window.onload = fillup;
+  
+  window.addEventListener('load', fillup);
 
   function slideleft() {
       if (parseInt(cross_slide.style.left) > actualwidth * -1 + 8)
@@ -28,5 +28,3 @@ function fillup() {
           'px';
       }  
   }
-
-
