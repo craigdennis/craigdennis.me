@@ -207,6 +207,14 @@ footer {
     color: white;
 }
 
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #1D84B5;
+}
+
 
 
 /* BUCKET LIST PAGE */
