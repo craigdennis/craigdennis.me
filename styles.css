@@ -208,3 +208,30 @@ footer {
 }
 
 
+
+/* BUCKET LIST PAGE */
+
+.header-image {
+  margin-top: 2em;
+}
+
+.header-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.bucket-main {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.bucket-main li {
+    margin-bottom: 1em;
+}
+
+.bucket-main ol {
+    margin: 3em 0;
+}
+
+
