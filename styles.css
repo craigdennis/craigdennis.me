@@ -49,6 +49,14 @@ button {
   font-size: 1.5rem;
 }
 
+.header-text h1 {
+    animation: moveInLeft 1s ease-out;
+}
+
+.header-text h3 {
+    animation: moveInRight 1s ease-out;
+}
+
 @media only screen and (max-width: 1000px) {
   .header-text {
     font-size: 1rem;
@@ -244,4 +252,37 @@ footer a:hover {
     margin: 3em 0;
 }
 
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+  
+    80% {
+      transform: translateX(10px);
+    }
+  
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    80% {
+      transform: translateX(-10px);
+    }
+  
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
 
