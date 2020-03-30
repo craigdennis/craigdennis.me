@@ -194,16 +194,22 @@ button {
     padding: 2em 0;
 }
 
-.contact button {
+.message-me {
     background-color: #1D84B5;
     color: white;
 }
 
-.contact button:hover {
+.message-me:hover {
     background-color: #176087;
     color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
 
+.message-me:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  }
 
 /* FOOTER */
 
