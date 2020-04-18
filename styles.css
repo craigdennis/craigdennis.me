@@ -137,54 +137,62 @@ button {
     margin: 0 auto;
 }
 
-#portfolio-1 {
+#frontend {
+  background-color: #cc7d49;
+}
+#button-frontend {
+  background-color: #e6a980;
+}
+#button-frontend:hover {
+  background-color: #ffdac1;
+}
+
+#ted {
     background-color: #B8336A;
     color: white;
 }
-
-#portfolio-2 {
-    background-color: #F3EEC3;
+#button-ted {
+  background-color: #9f4c6f;
+}
+#button-ted:hover {
+  background-color: #865b6d;
 }
 
-#portfolio-3 {
+#flourishing-media {
+    background-color: #F3EEC3;
+}
+#button-flourishing-media {
+  background-color: #dad184;
+}
+
+#button-flourishing-media:hover {
+  background-color: #c1b54e;
+}
+
+#dog-groomers {
     background-color: #293241;
     color: white;
 }
+#button-dog-groomers {
+  background-color: #273a5a;
+  color: white;
+}
 
-#portfolio-4 {
+#button-dog-groomers:hover {
+  background-color: #495974;
+}
+
+#punk {
     background-color: #BFFFBC;
 }
-
-#button-1 {
-    background-color: #9f4c6f;
-}
-#button-1:hover {
-    background-color: #865b6d;
+#button-punk {
+  background-color: #81e67c;
 }
 
-#button-2 {
-    background-color: #dad184;
+#button-punk:hover {
+  background-color: #4ccc45;
 }
 
-#button-2:hover {
-    background-color: #c1b54e;
-}
-
-#button-3 {
-    background-color: #273a5a;
-}
-
-#button-3:hover {
-    background-color: #495974;
-}
-
-#button-4 {
-    background-color: #81e67c;
-}
-
-#button-4:hover {
-    background-color: #4ccc45;
-}
 
 
 /* CONTACT SECTION */
@@ -209,6 +217,10 @@ button {
 .message-me:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  }
+
+  .btn-hover:hover {
+    transform: translateY(-3px)
   }
 
 /* FOOTER */
