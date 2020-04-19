@@ -28,6 +28,7 @@ button {
   border: 0.5px solid black;
   margin: 2em;
   font-size: 1.5rem;
+  transition: all .2s;
 }
 
 .container {
@@ -354,6 +355,14 @@ footer a:hover {
   background-color: white;
   color: #0a2239;
   
+}
+
+.btn-frontend {
+  display: flex;
+  margin: 0 auto;
+  background-color: rgb(34, 58, 80);
+  color: white;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
