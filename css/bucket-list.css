@@ -1,0 +1,19 @@
+.header-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+  
+  .bucket-main {
+    width: 50%;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  
+  .bucket-main li {
+    margin-bottom: 1em;
+  }
+  
+  .bucket-main ol {
+    margin: 3em 0;
+  }
