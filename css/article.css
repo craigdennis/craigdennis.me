@@ -1,0 +1,16 @@
+.article__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.article__img {
+    width: 80vw;
+}
+
+.article__body {
+    
+    margin: 2rem auto;
+    width: 90vw;
+   
+}
