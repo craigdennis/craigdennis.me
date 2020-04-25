@@ -12,3 +12,9 @@
   margin: 2rem auto;
   width: 60vw;
 }
+
+.article__code {
+  background-color: #EAEAED;
+  padding-top: 1rem;
+  margin: 1rem;
+}
