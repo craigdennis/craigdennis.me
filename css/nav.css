@@ -61,16 +61,13 @@
 .nav__item a {
   text-decoration: none;
   border-top: none;
-  transition: color 0.1s 0.2s;
   color: black;
 }
 .nav__item a:hover {
-  
+  color:#1d84b5;
+  text-decoration: underline;
 }
-.nav__item:hover {
-  transition: 100ms;
-  
-}
+
 .nav__item:hover:last-child {
   border: none;
 }
