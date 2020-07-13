@@ -38,6 +38,10 @@ li {
   margin: 10% auto;
 }
 
+.main a {
+  color: darkblue;
+}
+
 .article-section {
   margin-top: 7%;
 }
