@@ -1,0 +1,88 @@
+@font-face {
+  font-family: silka;
+  src: url('/fonts/silka-regular-webfont.woff2');
+}
+
+@font-face {
+  font-family: bould;
+  src: url('/fonts/bould-regular-webfont.woff2');
+}
+
+h1 {
+  font-family: 'silka';
+}
+
+h2,
+h3,
+h4,
+p,
+a,
+li {
+  font-family: 'bould';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-top: 5%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.main {
+  font-size: 1.5em;
+  width: 95%;
+  margin: 10% auto;
+}
+
+.article-section {
+  margin-top: 7%;
+}
+
+.article-title {
+  margin-bottom: 4px;
+}
+
+.article-title a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+}
+
+.article-title p {
+  font-size: 0.8em;
+}
+
+.article-link {
+  color: grey;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 100%;
+  margin-top: 3%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main {
+    font-size: 1.5em;
+    width: 80%;
+    margin: 5% auto;
+  }
+}

@@ -1,168 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-148950597-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-148950597-1');
-    </script>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Craig Dennis - Developer</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700,900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/homepage.css" />
-    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <nav class="nav">
-      <img class="logo" src="" alt="" />
-      <button id="burger" class="nav__burger">&#9776;</button>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="../index.html">Home</a></li>
-        <li class="nav__item"><a href="../bucket-list.html">Bucket List</a></li>
-      </ul>
+  <body class="container">
+    <nav>
+      <div class="nav">
+        <a href="/index.html"> <img class="img" src="images/photo.jpg" alt="" /></a>
+       
+        <class class="links">
+         <h1>Craig Dennis <a href="https://twitter.com/craigthatcodes"><img class="twitter-img" src="images/001-twitter.svg" alt=""></a> </h1>
+          <div>
+            <ul class="list">
+              <li> <a href="/articles.html">Articles</a> </li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
-    <header class="container">
-      <img
-        class="header-image"
-        src="https://res.cloudinary.com/dbwsa4cgf/image/upload/v1587310818/craigdennis.me/header_v1ekn2.png"
-        alt=""
-      />
-      <div class="header-text">
-        <h1>Craig Dennis</h1>
-        <h3>Web Developer</h3>
-      </div>
-    </header>
-    <main>
-      <div class="portfolio">
-        <div id="frontend" class="portfolio-container">
-          <img
-            src="https://res.cloudinary.com/dbwsa4cgf/image/upload/v1587310821/craigdennis.me/frontend-mentor_e47gjx.png"
-            alt=""
-          />
-          <h2>Frontend Mentor</h2>
-          <h3>HTML, CSS and Javascript</h3>
-          <div class="portfolio-content">
-            <p>
-              All the Fronted Mentor challenges that I have completed.
-            </p>
-          </div>
-          <a target="" href="frontend-mentor.html"
-            ><button id="button-frontend" class="btn-hover">
-              View Projects
-            </button></a
-          >
-        </div>
 
-        <div id="ted" class="portfolio-container">
-          <img
-            src="https://res.cloudinary.com/dbwsa4cgf/image/upload/c_scale,w_1024/v1587310817/craigdennis.me/actor_qsdbz1.png"
-            alt=""
-          />
-          <h2>Ted's Acting Portfolio</h2>
-          <h3>HTML, CSS and Bootstrap</h3>
-          <div class="portfolio-content">
-            <p>
-              Created a website that showcased all the previous acting work and
-              contained everything needed to help Ted to apply for acting jobs.
-            </p>
-          </div>
-          <a target="_blank" href="https://www.tedclaxton.co.uk/"
-            ><button id="button-ted" class="btn-hover">View Website</button></a
-          >
-        </div>
+    <main class="main">
+      <section><p> Hi, I'm <a href="">Craig</a>. </p>
+        <br>
+        
+       <p> I'm starting my journey into sharing what I know about frontend development to help others
+        level up their skills and get the career they want.</p>
 
-        <div id="flourishing-media" class="portfolio-container">
-          <img
-            src="https://res.cloudinary.com/dbwsa4cgf/image/upload/c_scale,w_1024/v1587310820/craigdennis.me/flourishing-media_laiu8b.png"
-            alt=""
-          />
-          <h2>Flourishing Media</h2>
-          <h3>Wordpress and Custom CSS</h3>
-          <div class="portfolio-content">
-            <p>
-              A dog groomer website showing of the services, a gallery of
-              previous cuts and customer feedback.
-            </p>
-          </div>
-          <a target="_blank" href="https://flourishingmedia.co.uk/"
-            ><button id="button-flourishing-media" class="btn-hover">
-              View Website
-            </button></a
-          >
-        </div>
+        <br>
+        <p>You can find this through my <a href="">articles</a>.</p>
+<br>
+        <p>I have also created a few <a href="">projects</a> , some for fun and some to help others.</p>
+        <br><br><br>
+        <p>If you would like to keep on my latest projects, articles or random musings, sign up to my newsletter</p>
 
-        <div id="dog-groomers" class="portfolio-container">
-          <img
-            src="https://res.cloudinary.com/dbwsa4cgf/image/upload/c_scale,w_1024/v1587310826/craigdennis.me/dog-groomers_jqx3es.png"
-            alt=""
-          />
-          <h2>Dog Groomers</h2>
-          <h3>HTML, CSS and Bootstrap</h3>
-          <div class="portfolio-content">
-            <p>
-              A dog groomer website showing of the services, a gallery of
-              previous cuts and customer feedback.
-            </p>
-          </div>
-          <a target="_blank" href="https://dog-grooming.netlify.app"
-            ><button id="button-dog-groomers" class="btn-hover">
-              View Website
-            </button></a
-          >
-        </div>
+        <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://app.us3.list-manage.com/subscribe/post?u=54e1ed5e1654eb2ea27c95598&amp;id=3eef983d35" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_54e1ed5e1654eb2ea27c95598_3eef983d35" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
 
-        <!-- <div id="punk" class="portfolio-container">
-          <img
-            src="https://res.cloudinary.com/dbwsa4cgf/image/upload/c_scale,q_79,w_1100/v1587310821/craigdennis.me/coverd-in-punk_vxzfqg.png"
-            alt=""
-          /> -->
-          <!-- <h2>Cover'd In Punk</h2>
-          <h3>HTML and CSS</h3>
-          <div class="portfolio-content">
-            <p>
-              Simple Band website with social links and contact page.
-            </p>
-          </div>
-          <a
-      
-            target="_blank"
-            href="https://elegant-noether-ad6abf.netlify.app/"
-            ><button id="button-punk" class="btn-hover">View Website</button></a
-          >
-        </div> -->
-      </div>
+<!--End mc_embed_signup-->
 
-      <div class="contact">
-        <h1>If you are looking for more...</h1>
-        <p>
-          Drop me a email if you are looking for help on a project or would like
-          a good chin wag.
-        </p>
-        <a href="mailto:craigdennis1990@gmail.com"
-          ><button class="message-me">Message Me</button></a
-        >
-      </div>
+      </section>
     </main>
-    <footer class="footer">
-      <p><a href="bucket-list.html">Bucket List</a></p>
-      <p>© Craig Dennis. All Right Reserved</p>
-    </footer>
+
     <script src="index.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>
