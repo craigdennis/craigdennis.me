@@ -7,6 +7,9 @@
   margin-bottom: 3%;
 }
 
+.article-link {
+  color: darkgray;
+}
 
 @media only screen and (min-width: 678px) {
   .article-heading {
