@@ -88,6 +88,15 @@ li {
   text-decoration: underline;
 }
 
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-up img {
+  height: auto;
+  width: 15vw;
+}
+
 #mc_embed_signup {
   background: #fff;
   clear: left;
