@@ -91,11 +91,23 @@ li {
 .sign-up {
   display: flex;
   justify-content: space-between;
+  margin: 2em auto;
 }
 .sign-up img {
   height: auto;
-  width: 15vw;
+  width: 20vw;
+  flex: 1 1 30%;
 }
+.newsletter-img {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.newsletter-form {
+  flex: 1 1 30%;
+  width: 10vw;
+}
+
 
 #mc_embed_signup {
   background: #fff;
