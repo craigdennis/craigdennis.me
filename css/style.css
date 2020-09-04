@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-  color: hsl(0, 0%, 20%)
+  color: hsl(0, 0%, 20%);
 }
 
 h2,
@@ -91,11 +91,12 @@ li {
 .sign-up {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin: 2em auto;
 }
 .sign-up img {
   height: auto;
-  width: 20vw;
+  width: 50%;
   flex: 1 1 30%;
 }
 .newsletter-img {
@@ -105,9 +106,16 @@ li {
 
 .newsletter-form {
   flex: 1 1 30%;
-  width: 10vw;
 }
 
+.signup-copy {
+  padding: 10px;
+}
+
+.signup-container {
+  border: 1px solid black;
+  padding: 2%;
+}
 
 #mc_embed_signup {
   background: #fff;
@@ -122,5 +130,19 @@ li {
     font-size: 1.5em;
     width: 80%;
     margin: 5% auto;
+  }
+
+  .sign-up {
+    flex-direction: row;
+  }
+
+  .sign-up img {
+    height: auto;
+    width: 20vw;
+    flex: 1 1 30%;
+  }
+
+  .newsletter-form {
+    width: 10vw;
   }
 }
