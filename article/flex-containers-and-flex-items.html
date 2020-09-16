@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Begin learning about CSS Flexbox starting with Flex Containers and Flex Items">
+    <title>Flex Containers and Flex Items</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/article.css">
+</head>
+<body class="container">
+    <nav>
+      <div class="nav">
+        <a href="/index.html"> <img class="img" src="/images/photo.jpg" alt="" /></a>
+        <class class="links">
+         <h1>Craig Dennis <a href="https://twitter.com/craigthatcodes"><img class="twitter-img" src="/images/001-twitter.svg" alt=""></a> </h1>
+          <div>
+            <ul class="list">
+              <li> <a href="/articles.html">Articles</a> </li>
+              <li> <a href="/projects.html">Projects</a> </li>
+              <li> <a href="/portfolio.html">Portfolio</a> </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+        <section class="article-heading"><h1>Flexbox: Flex Containers and Flex Items</h1></section>
+        <section>
+          
+
+          Flexbox has been a godsend to me. It upped my CSS game and allowed me greater control over positioning things on the websites.
+          <br><br>
+          The first thing that you need to understand to start using flexbox is what flex containers and flex items are.
+          <br><br>
+          Understanding these is the foundation of using flexbox.
+          <br><br>
+          To help picture how containers and items work think of it like this.
+          <br><br>
+          If we take a room in your house.
+          <br><br>
+          In the room we place different types of furniture; we have a chest of drawers, a sideboard and a wardrobe.
+          <br><br>
+          And in these pieces of furniture, we have different items; in one we have pants and sock, another we have all our clothes and the other we have midnight snacks.
+          <br><br>
+          The furniture, we can place in different parts of the room. And in the furniture, the items are arranged in the manner of which we have placed them in there.
+          <br><br>
+          This is similar to how flexbox works on a webpage.
+          <br><br>
+          The room in this example is the webpage. The furniture are the different components that make up the webpage; such as the navbar, a gallery or a features section.
+          <br><br>
+          And the objects in the furniture are the items that make up the components.
+          <br><br>
+          So a navbar could be made up with a company logo and an unordered list with links.
+          <br><br>
+          A gallery could be made up of 5 images.
+          <br><br>
+          And a features section could be made up of different cards and within them could be a header text and body text.
+          <br><br>
+          Taking this thinking and applying it into the flexbox world, knowing how flex containers and flex items behave with each other will help you understand flexbox.
+          <br><br>
+          It is all about upstanding what set of items do you want to have control of, to arrange, and taking them and putting them into a container so you have the power of flexbox to hand.
+          <br><br>
+          Let's take the navbar example to put this into context. This is the result that we are aiming for. A navbar with a logo on the left and links on the right for navigation.
+          <br><br>
+
+        
+          <img class="full-width" src="/images/article-images/logo-image.png" alt="">
+          
+          <br><br>
+          In this example, the room is the webpage. The furniture that we are putting in this room is the navbar (which will be what we are using for our container). And the items are the logo and the nav links.
+          <br><br>
+          We want to control the positioning on the logo and the nav links (the items) within the navbar (the container).
+          <br><br>
+          To simply do this we turn the navbar into a flexbox container by applying display: flex in this CSS of the navbar.
+          <br><br>
+
+          <img class="full-width" src="/images/article-images/flex-container-nav-css.png" alt="">
+
+
+          <br><br>
+          This then gives us the power to apply the different properties of flexbox on the flex-container to arrange the items within the container.
+          <br><br>
+          In the navbar example, we have applied the align-items property to align the items within the navbar to centre and the justify-content property to apply space between the items.
+          <br><br>
+          We have added some other CSS style to make it look prettier and we have even created another flex-container on the unordered list so the list items are under the control of flexbox as well.
+          <br><br>
+          
+          <img class="full-width" src="/images/article-images/flex-containers-css-style.png" alt="">
+
+          <br><br>
+          I hope this introduction to flex-container and flex-items helps with your outstanding with using flexbox.
+          <br><br>
+          I have recently released a FREE book on flexbox called Flexbox Answered: answers to the most common flexbox questions which can help answer some more question on flexbox that you might have.
+          <br><br>
+          You can download a copy free on my website craigdennis.me
+          
+          Full Code
+          
+          <img class="full-width" src="/images/article-images/flex-container-full-html.png" alt="">
+          
+          <img class="full-width" src="/images/article-images/flex-container-full-css.png" alt="">
+
+          <br><br>
+
+          You can download all the code in this example <a href="https://github.com/craigdennis/craigdennis-articles/tree/master/flex-container-and-items">here</a>
+          
+          
+          
+
+<br><br><br><br>
+That’s a wrap!
+<br><br>
+I hope that you can take away something from the words that I have written, even if it is just the smallest of things.
+<br><br>
+Follow me on <a href="https://twitter.com/craigthatcodes">twitter</a>  for similar content to this, tips and tricks that I learn and want to share with you, as well as pictures of dogs, food and whatever is happening in my life. 
+
+
+        </section>
+    </main>
+    
+</body>
+</html>
