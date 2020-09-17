@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Begin learning about CSS Flexbox starting with Flex Containers and Flex Items">
+    <title>Flexbox: Axes</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/article.css">
+</head>
+<body class="container">
+    <nav>
+      <div class="nav">
+        <a href="/index.html"> <img class="img" src="/images/photo.jpg" alt="" /></a>
+        <class class="links">
+         <h1>Craig Dennis <a href="https://twitter.com/craigthatcodes"><img class="twitter-img" src="/images/001-twitter.svg" alt=""></a> </h1>
+          <div>
+            <ul class="list">
+              <li> <a href="/articles.html">Articles</a> </li>
+              <li> <a href="/projects.html">Projects</a> </li>
+              <li> <a href="/portfolio.html">Portfolio</a> </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+        <section class="article-heading"><h1>Flexbox: Axes</h1></section>
+        <section>
+
+One thing that is useful to have in mind when using Flexbox is what axis are you working on. Depending on the direction you are flexing can change the axis will make a difference to the axes.
+<br><br>
+The reason to know about axes is that some of the flex container properties effect flex items on different axes. This will help you achieve the end result better as you have a better understanding on how it works.
+
+<br><br><br>
+
+<h2>Main Axis</h2>
+
+The main axis is decided by which flex-direction you have chosen. You have the options of the following;
+<br><br>
+
+  - row
+  <br>
+  - row-reverse
+  <br>
+  - column
+  <br>
+  - column-reverse
+
+
+<br><br>
+
+Row is the default option when you just apply display:flex to a container. This would make the main axis go from left to right.
+<br><br>
+Row reverse would do the opposite, the main axis would go from right to left.
+<br><br>
+As you may have guessed it, column makes the main axis go from top to bottom and column-reverse goes from bottom to top.
+<br><br><br>
+
+
+<h2>Cross Axis</h2>
+You should think of the cross axis as the opposite of the main axis. Where the flex direction is set to row the main axis is left to right so the cross axis is top to bottom.
+<br><br>
+Where the flex direction is set to column, the main axis is top to bottom where the cross axis is left to right.
+<br><br><br>
+
+
+<h2>Start and End Lines</h2>
+
+It is also useful to know where the start and end lines are on the axes as when you start align and justifying content this will help you position your flex items easier.
+<br><br>
+The start and end lines change in relation to which flex-direction has been set.
+<br><br>
+Picture a container box, with two flex items inside it. Then have a guess at the below question, mentally, or draw it out if it helps you, where the start or end line would be.
+<br><br><br>
+
+
+<h2>Questions</h2>
+
+<ol type-"1">
+  <li>Where would the start line on the main axis, if the flex-direction was set to row-reverse?</li>
+  <br>
+  <li>Where would the end line on the cross axis, if the flex-direction was set to column?</li>
+
+</ol>
+<br><br><br>
+ 
+
+<h2>Answers</h2> 
+
+<ol type="1">
+  <li>The main axis would be going from left to right, and the start line would be on the right hand side.</li>
+  <br>
+  <li>With the flex direction being set to column, the main axis would go from top to bottom, so the cross axis would go from left to right, and the end line would be on the right hand side.</li>
+</ol>
+
+<br><br><br>
+
+This diagram may help you in understand further what we explained above.
+
+<img src="https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/images/flex-direction-terms.svg" alt="">
+
+<em>Taken from the official W3 <a href="https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/">documentation</a></em>
+
+<br><br>
+
+I have recently released a FREE book on flexbox called Flexbox Answered: answers to the most common flexbox questions which can help answer some more question on flexbox that you might have.
+<br><br>
+You can download a copy free on my <a href="https://www.craigdennis.me">website</a>
+
+          
+<br><br><br><br>
+That’s a wrap!
+<br><br>
+I hope that you can take away something from the words that I have written, even if it is just the smallest of things.
+<br><br>
+Follow me on <a href="https://twitter.com/craigthatcodes">twitter</a>  for similar content to this, tips and tricks that I learn and want to share with you, as well as pictures of dogs, food and whatever is happening in my life. 
+
+
+        </section>
+    </main>
+    
+</body>
+</html>
